@@ -3,6 +3,7 @@ pipeline {
     environment {
         //define your vars
         NAME = 'Toro'
+        DB_Host = 'Kenny'
     }
     triggers {
         pollSCM '* * * * *'
