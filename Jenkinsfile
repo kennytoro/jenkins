@@ -8,7 +8,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Clone of the repos
-                git 'https://github.com/kennytoro/jenkins.git'
+                git 'https://github.com/kennytoro/docker-compose-class1.git'
             }
         }
 
