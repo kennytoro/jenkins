@@ -44,7 +44,7 @@ pipeline {
     }
 
     post {
-        sucess {
+        success {
             // Actions to be perform when the pipeline is successful
             echo " T for Thanks... Man go job on ${BUILD_ID} build"
         }
