@@ -1,5 +1,9 @@
 pipeline {
     agent any 
+    environment {
+        //define your vars
+        NAME = 'Toro'
+    }
     triggers {
         pollSCM '* * * * *'
     }
@@ -15,6 +19,7 @@ pipeline {
         stage('Build') {
             steps {
                 // Building stage
+                echo "Welcome to ${NAME} Jenkins World"
                 sh '''
                 echo "This is the building stage with a build number of ${BUILD_ID}"
                 echo 'Built successfully'
