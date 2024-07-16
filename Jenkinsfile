@@ -1,6 +1,6 @@
 pipeline {
     agent any 
-    trigger {
+    triggers {
         pollSCM '* * * * *'
     }
 
@@ -8,7 +8,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Clone of the repos
-                git https://github.com/kennytoro/jenkins101.git
+                git 'https://github.com/kennytoro/jenkins.git'
             }
         }
 
